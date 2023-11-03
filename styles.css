@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  box-shadow: 0px 5px 5px rgba(168, 164, 164, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.logo {
+  width: 384px;
+  height: 60px;
+}
+
+.main {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+}
+
+.main .side-bar {
+  width: 20%;
+  box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  /* background-image: url(./assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+  position: relative;
+}
+
+.info::before {
+  content: "";
+  background-image: url(./assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5; /* Điều chỉnh mức độ mờ ở đây */
+  background-color: rgba(8, 8, 8, 0.5); /* Màu nền overlay và mờ */
+  z-index: -1; /* Đảm bảo lớp overlay nằm phía sau nội dung */
+}
+
+/* .info::after {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(117, 126, 126);
+} */
+
+.main .side-bar .avt {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.main .side-bar .name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.icon-info {
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+/* option */
+
+.item {
+  padding-left: 4px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  cursor: pointer;
+}
+
+.item .icon {
+  color: #1e81b0;
+  margin-right: 8px;
+}
+
+.item:hover {
+  background-color: #ebe6e6;
+}
+
+.content {
+  background-color: #eeeded;
+  padding: 16px;
+}
+
+.content-h {
+  margin-bottom: 32px;
+}
+
+.content-h .table {
+  margin-bottom: 8px;
+}
+
+.content-h .link {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 24px;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 16px;
+}
+
+.days h3,
+.engineering h3,
+.people h3 {
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  height: 32px;
+  width: 154px;
+}
+
+.form .input {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.comfirm {
+  display: flex;
+  align-items: end;
+}
+
+.comfirm p {
+  height: 35px;
+  width: 60px;
+  text-align: center;
+  line-height: 35px;
+  background-color: #3e98fc;
+  border-radius: 4px;
+  color: #fff;
+}
